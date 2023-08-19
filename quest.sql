@@ -1,3 +1,4 @@
+CREATE MATERIALIZED VIEW public.data_mart_table AS
 WITH
 sales_total AS (
 	SELECT product_id, sales_date, sales_cnt, (SELECT shop_id FROM shop WHERE shop_name = 'DNS')

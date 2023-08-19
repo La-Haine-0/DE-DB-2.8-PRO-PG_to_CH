@@ -19,4 +19,4 @@ CREATE TABLE IF NOT EXISTS data_mart_clickhouse (
     "promo_income" Float32,
     "promo_income/fact_income" Float32
 )
-ENGINE = PostgreSQL('postgres:5432', 'postgres_db', 'data_mart_table', 'postgres', 'postgres');
+ENGINE = PostgreSQL('postgres:5432', 'postgres_db', 'public.data_mart_table', 'postgres', 'postgres');
